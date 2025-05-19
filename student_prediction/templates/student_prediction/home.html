@@ -1,0 +1,90 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prediksi Keterkaitan Mata Kuliah</title>
+
+    <link rel="stylesheet" href="{% static 'student_prediction/css/style.css' %}">
+
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Prediksi Keterkaitan Mata Kuliah</h1>
+
+        <p>Halaman ini bertujuan untuk memprediksi apakah dua mata kuliah sebaiknya diambil dalam satu semester yang sama. Prediksi ini didasarkan pada analisis data historis dan pola keterkaitan antar mata kuliah.</p>
+
+        <h2>Analisis Keterkaitan Mata Kuliah</h2>
+
+        <p>Dengan menggunakan algoritma data science, kami menganalisis data transkrip nilai siswa untuk mengidentifikasi mata kuliah mana saja yang memiliki korelasi positif atau negatif ketika diambil bersamaan.</p>
+
+        <ul>
+
+
+            <li>
+                <h3>About</h3>
+                <a href="{% url 'student_prediction:about' %}">
+                    <button>Tentang Aplikasi Ini</button>
+                </a>
+            </li>
+
+            <li>
+                <h3>Alfira</h3>
+                <a href="{% url 'student_prediction:alfira_predictdashboard' %}">
+                    <button>Tentang Prediction Alfira</button>
+                </a>
+            </li>
+
+            <li>
+                <h3>Hanum</h3>
+                <a href="{% url 'student_prediction:hanum_predictdashboard' %}">
+                    <button>Tentang Prediction Hanum</button>
+                </a>
+            </li>
+
+            <li>
+                <h3>Najla</h3>
+                <a href="{% url 'student_prediction:najla_predictdashboard' %}">
+                    <button>Tentang Prediction Najla</button>
+                </a>
+            </li>
+
+            <li>
+                <h3>Safira</h3>
+                <a href="{% url 'student_prediction:safira_predictdashboard' %}">
+                    <button>Tentang Prediction Safira</button>
+                </a>
+            </li>
+
+
+        </ul>
+
+        <h2>Manfaat Prediksi Keterkaitan Mata Kuliah</h2>
+
+        <p>Informasi ini bermanfaat bagi:</p>
+
+        <ul>
+
+            <li><strong>Siswa:</strong> Membantu dalam merencanakan jadwal kuliah yang lebih efektif dan menghindari potensi kesulitan akibat mengambil mata kuliah yang saling memberatkan dalam satu semester.</li>
+
+            <li><strong>Dosen Pembimbing Akademik:</strong> Memberikan panduan yang lebih baik kepada mahasiswa dalam memilih mata kuliah.</li>
+
+            <li><strong>Departemen Akademik:</strong> Mendapatkan wawasan tentang kurikulum dan potensi penyesuaian yang dapat meningkatkan pengalaman belajar mahasiswa.</li>
+
+        </ul>
+
+    </main>
+
+</body>
+
+</html>
